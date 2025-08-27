@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com introdução -->
+        <header>
+            <h1>Bem-vindo ao Ragi's!</h1>
+            <p>Explore nosso cardápio e escolha seus pratos favoritos!</p>
+        </header>
+
+        <!-- Seção do Cardápio -->
+        <section class="menu">
+            <!-- Cardápio do Prato 1 -->
+            <div class="dish">
+                <h2>Lasanha à Bolonhesa</h2>
+                <p>Uma deliciosa lasanha com molho bolonhesa, queijo derretido e uma camada crocante.</p>
+                <div class="info">
+                    <p><strong>Preço:</strong> R$ 35,00</p>
+                    <p><strong>Ingredientes:</strong> Massa de lasanha, carne moída, molho de tomate, queijo muçarela, parmesão.</p>
+                    <p><strong>Tempo de preparo:</strong> 40 minutos</p>
+                </div>
+                <button class="btn" aria-label="Adicionar Lasanha à Bolonhesa ao pedido" onclick="addToOrder('Lasanha à Bolonhesa')">
+                    <span class="material-icons">restaurant_menu</span> Pedir Lasanha
+                </button>
+            </div>
+
+            <!-- Cardápio do Prato 2 -->
+            <div class="dish">
+                <h2>Filé de Peixe Grelhado</h2>
+                <p>Filé de peixe grelhado com ervas finas, acompanhado de arroz e legumes frescos.</p>
+                <div class="info">
+                    <p><strong>Preço:</strong> R$ 40,00</p>
+                    <p><strong>Ingredientes:</strong> Filé de peixe, arroz, legumes, ervas finas.</p>
+                    <p><strong>Tempo de preparo:</strong> 30 minutos</p>
+                </div>
+                <button class="btn" aria-label="Adicionar Filé de Peixe Grelhado ao pedido" onclick="addToOrder('Filé de Peixe Grelhado')">
+                    <span class="material-icons">restaurant_menu</span> Pedir Filé de Peixe
+                </button>
+            </div>
+
+            <!-- Cardápio do Prato 3 -->
+            <div class="dish">
+                <h2>Risoto de Cogumelos</h2>
+                <p>Risoto cremoso com cogumelos frescos, queijo parmesão e toque de azeite trufado.</p>
+                <div class="info">
+                    <p><strong>Preço:</strong> R$ 42,00</p>
+                    <p><strong>Ingredientes:</strong> Arroz, cogumelos, parmesão, azeite trufado, caldo de legumes.</p>
+                    <p><strong>Tempo de preparo:</strong> 35 minutos</p>
+                </div>
+                <button class="btn" aria-label="Adicionar Risoto de Cogumelos ao pedido" onclick="addToOrder('Risoto de Cogumelos')">
+                    <span class="material-icons">restaurant_menu</span> Pedir Risoto
+                </button>
+            </div>
+
+            <!-- Cardápio do Prato 4 -->
+            <div class="dish">
+                <h2>Feijoada Completa</h2>
+                <p>Tradicional feijoada com carne de porco, arroz, couve refogada e laranja.</p>
+                <div class="info">
+                    <p><strong>Preço:</strong> R$ 50,00</p>
+                    <p><strong>Ingredientes:</strong> Feijão preto, carne de porco, arroz, couve, laranja, farofa.</p>
+                    <p><strong>Tempo de preparo:</strong> 2 horas</p>
+                </div>
+                <button class="btn" aria-label="Adicionar Feijoada Completa ao pedido" onclick="addToOrder('Feijoada Completa')">
+                    <span class="material-icons">restaurant_menu</span> Pedir Feijoada
+                </button>
+            </div>
+
+            <!-- Cardápio do Prato 5 -->
+            <div class="dish">
+                <h2>Hambúrguer Gourmet</h2>
+                <p>Hambúrguer artesanal com queijo cheddar, alface, tomate, cebola caramelizada e maionese caseira.</p>
+                <div class="info">
+                    <p><strong>Preço:</strong> R$ 28,00</p>
+                    <p><strong>Ingredientes:</strong> Carne de hambúrguer, queijo cheddar, pão artesanal, alface, tomate, cebola caramelizada.</p>
+                    <p><strong>Tempo de preparo:</strong> 20 minutos</p>
+                </div>
+                <button class="btn" aria-label="Adicionar Hambúrguer Gourmet ao pedido" onclick="addToOrder('Hambúrguer Gourmet')">
+                    <span class="material-icons">restaurant_menu</span> Pedir Hambúrguer
+                </button>
+            </div>
+
+            <!-- Cardápio do Prato 6 -->
+            <div class="dish">
+                <h2>Salada Mediterrânea</h2>
+                <p>Uma refrescante salada com tomates, pepino, queijo feta, azeitonas e molho de azeite e limão.</p>
+                <div class="info">
+                    <p><strong>Preço:</strong> R$ 22,00</p>
+                    <p><strong>Ingredientes:</strong> Tomates, pepino, queijo feta, azeitonas, azeite, limão.</p>
+                    <p><strong>Tempo de preparo:</strong> 15 minutos</p>
+                </div>
+                <button class="btn" aria-label="Adicionar Salada Mediterrânea ao pedido" onclick="addToOrder('Salada Mediterrânea')">
+                    <span class="material-icons">restaurant_menu</span> Pedir Salada
+                </button>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2025 Restaurante Ragi's | Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
